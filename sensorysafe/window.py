@@ -27,7 +27,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.append(header)
 
         add_btn = Gtk.Button(icon_name="list-add-symbolic")
-        add_btn.set_tooltip_text(_("Lägg till plats")
+        add_btn.set_tooltip_text(_("Add plats")
         add_btn.connect("clicked", self._on_add_clicked)
         header.pack_start(add_btn)
 
@@ -135,7 +135,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         # Ta bort-knapp
         del_btn = Gtk.Button(icon_name="user-trash-symbolic")
         del_btn.add_css_class("destructive-action")
-        del_btn.set_tooltip_text(_("Ta bort plats")
+        del_btn.set_tooltip_text(_("Delete plats")
         del_btn.connect("clicked", self._on_delete_place, index, dialog)
         header.pack_end(del_btn)
 
@@ -221,7 +221,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         header = Adw.HeaderBar()
         toolbar_view.add_top_bar(header)
 
-        save_btn = Gtk.Button(label=_("Spara")
+        save_btn = Gtk.Button(label=_("Save")
         save_btn.add_css_class("suggested-action")
         header.pack_end(save_btn)
 
@@ -237,9 +237,9 @@ class SensorySafeWindow(Adw.ApplicationWindow):
 
         # Namn
         name_group = Adw.PreferencesGroup(title=_("Platsinfo")
-        name_entry = Adw.EntryRow(title=_("Namn")
+        name_entry = Adw.EntryRow(title=_("Name")
         name_group.add(name_entry)
-        desc_entry = Adw.EntryRow(title=_("Beskrivning")
+        desc_entry = Adw.EntryRow(title=_("Description")
         name_group.add(desc_entry)
         comment_entry = Adw.EntryRow(title=_("Kommentar / tips")
         name_group.add(comment_entry)
@@ -303,7 +303,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         header = Adw.HeaderBar()
         toolbar_view.add_top_bar(header)
 
-        reset_btn = Gtk.Button(label=_("Återställ")
+        reset_btn = Gtk.Button(label=_("Reset")
         header.pack_end(reset_btn)
 
         box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
@@ -313,7 +313,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.set_margin_bottom(16)
         toolbar_view.set_content(box)
 
-        info = Gtk.Label(label=_("Visa bara platser med max denna nivå:")
+        info = Gtk.Label(label=_("Show bara platser med max denna nivå:")
         info.set_wrap(True)
         info.set_xalign(0)
         box.append(info)

@@ -1,0 +1,54 @@
+# Swedish translation
+# Copyright (C) 2024
+# This file is distributed under the same license as the package.
+#
+msgid ""
+msgstr ""
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Beskrivning"
+msgstr "Description"
+
+msgid "Filtrera platser"
+msgstr "Filtrera platser"
+
+msgid "Kommentar"
+msgstr "Kommentar"
+
+msgid "Kommentar / tips"
+msgstr "Kommentar / tips"
+
+msgid "Lägg till plats"
+msgstr "Add plats"
+
+msgid "Namn"
+msgstr "Name"
+
+msgid "Platsinfo"
+msgstr "Platsinfo"
+
+msgid "Sensorisk betygsättning (1-10)"
+msgstr "Sensorisk betygsättning (1-10)"
+
+msgid "Spara"
+msgstr "Save"
+
+msgid "Ta bort plats"
+msgstr "Delete plats"
+
+msgid "Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande)."
+msgstr "Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande)."
+
+msgid "Varningar"
+msgstr "Varningar"
+
+msgid "Visa bara platser med max denna nivå:"
+msgstr "Show bara platser med max denna nivå:"
+
+msgid "Återställ"
+msgstr "Reset"
+

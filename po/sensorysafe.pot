@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the SensorySafe package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: SensorySafe 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 11:31+0100\n"
+"POT-Creation-Date: 2026-03-16 11:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,65 +17,62 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/SensorySafe/sensorysafe/window.py:107
-msgid " | "
+#: sensorysafe/window.py:30
+msgid "Add plats"
 msgstr ""
 
-#: /tmp/SensorySafe/sensorysafe/window.py:242
-msgid "Beskrivning"
-msgstr ""
-
-#: /tmp/SensorySafe/sensorysafe/window.py:35
+#: sensorysafe/window.py:35
 msgid "Filtrera platser"
 msgstr ""
 
-#: /tmp/SensorySafe/sensorysafe/window.py:191
-msgid "Kommentar"
-msgstr ""
-
-#: /tmp/SensorySafe/sensorysafe/window.py:244
-msgid "Kommentar / tips"
-msgstr ""
-
-#: /tmp/SensorySafe/sensorysafe/window.py:30
-msgid "Lägg till plats"
-msgstr ""
-
-#: /tmp/SensorySafe/sensorysafe/window.py:240
-msgid "Namn"
-msgstr ""
-
-#. Namn
-#: /tmp/SensorySafe/sensorysafe/window.py:239
-msgid "Platsinfo"
-msgstr ""
-
-#. Sensoriska betyg
-#: /tmp/SensorySafe/sensorysafe/window.py:249
-msgid "Sensorisk betygsättning (1-10)"
-msgstr ""
-
-#: /tmp/SensorySafe/sensorysafe/window.py:224
-msgid "Spara"
-msgstr ""
-
-#: /tmp/SensorySafe/sensorysafe/window.py:138
-msgid "Ta bort plats"
-msgstr ""
-
-#. Inforad
-#: /tmp/SensorySafe/sensorysafe/window.py:40
+#: sensorysafe/window.py:40
 msgid "Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande)."
 msgstr ""
 
-#: /tmp/SensorySafe/sensorysafe/window.py:183
+#: sensorysafe/window.py:107
+msgid " | "
+msgstr ""
+
+#: sensorysafe/window.py:138
+msgid "Delete plats"
+msgstr ""
+
+#: sensorysafe/window.py:183
 msgid "Varningar"
 msgstr ""
 
-#: /tmp/SensorySafe/sensorysafe/window.py:316
-msgid "Visa bara platser med max denna nivå:"
+#: sensorysafe/window.py:191
+msgid "Kommentar"
 msgstr ""
 
-#: /tmp/SensorySafe/sensorysafe/window.py:306
-msgid "Återställ"
+#: sensorysafe/window.py:224
+msgid "Save"
+msgstr ""
+
+#: sensorysafe/window.py:239
+msgid "Platsinfo"
+msgstr ""
+
+#: sensorysafe/window.py:240
+msgid "Name"
+msgstr ""
+
+#: sensorysafe/window.py:242
+msgid "Description"
+msgstr ""
+
+#: sensorysafe/window.py:244
+msgid "Kommentar / tips"
+msgstr ""
+
+#: sensorysafe/window.py:249
+msgid "Sensorisk betygsättning (1-10)"
+msgstr ""
+
+#: sensorysafe/window.py:306
+msgid "Reset"
+msgstr ""
+
+#: sensorysafe/window.py:316
+msgid "Show bara platser med max denna nivå:"
 msgstr ""
