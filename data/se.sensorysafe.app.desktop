@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SensorySafe
+Comment=Kartapp för sensorisk belastning
+Exec=sensorysafe
+Icon=preferences-system-privacy
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+Keywords=sensory;autism;accessibility;
