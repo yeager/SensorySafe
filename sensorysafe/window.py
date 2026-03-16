@@ -1,6 +1,7 @@
 """Huvudfönster för SensorySafe."""
 
 import gi
+from sensorysafe.i18n import _
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 from gi.repository import Gtk, Adw
@@ -26,17 +27,17 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.append(header)
 
         add_btn = Gtk.Button(icon_name="list-add-symbolic")
-        add_btn.set_tooltip_text("Lägg till plats")
+        add_btn.set_tooltip_text(_("Lägg till plats")
         add_btn.connect("clicked", self._on_add_clicked)
         header.pack_start(add_btn)
 
         filter_btn = Gtk.Button(icon_name="funnel-symbolic")
-        filter_btn.set_tooltip_text("Filtrera platser")
+        filter_btn.set_tooltip_text(_("Filtrera platser")
         filter_btn.connect("clicked", self._on_filter_clicked)
         header.pack_end(filter_btn)
 
         # Inforad
-        info = Gtk.Label(label="Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande).")
+        info = Gtk.Label(label=_("Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande).")
         info.set_wrap(True)
         info.set_margin_start(12)
         info.set_margin_end(12)
@@ -103,7 +104,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
             warnings.append("Mycket trångt!")
 
         if warnings:
-            warn_label = Gtk.Label(label=" | ".join(warnings))
+            warn_label = Gtk.Label(label=_(" | ".join(warnings))
             warn_label.add_css_class("error")
             row.add_suffix(warn_label)
 
@@ -134,7 +135,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         # Ta bort-knapp
         del_btn = Gtk.Button(icon_name="user-trash-symbolic")
         del_btn.add_css_class("destructive-action")
-        del_btn.set_tooltip_text("Ta bort plats")
+        del_btn.set_tooltip_text(_("Ta bort plats")
         del_btn.connect("clicked", self._on_delete_place, index, dialog)
         header.pack_end(del_btn)
 
@@ -179,7 +180,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
             warnings.append("Mycket trångt - besök vid lugnare tider")
 
         if warnings:
-            warn_group = Adw.PreferencesGroup(title="Varningar")
+            warn_group = Adw.PreferencesGroup(title=_("Varningar")
             for w in warnings:
                 warn_row = Adw.ActionRow(title=w, icon_name="dialog-warning-symbolic")
                 warn_group.add(warn_row)
@@ -187,7 +188,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
 
         # Kommentar
         if place.get("kommentar"):
-            comment_group = Adw.PreferencesGroup(title="Kommentar")
+            comment_group = Adw.PreferencesGroup(title=_("Kommentar")
             comment_label = Gtk.Label(label=place["kommentar"])
             comment_label.set_wrap(True)
             comment_label.set_xalign(0)
@@ -220,7 +221,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         header = Adw.HeaderBar()
         toolbar_view.add_top_bar(header)
 
-        save_btn = Gtk.Button(label="Spara")
+        save_btn = Gtk.Button(label=_("Spara")
         save_btn.add_css_class("suggested-action")
         header.pack_end(save_btn)
 
@@ -235,17 +236,17 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         scroll.set_child(box)
 
         # Namn
-        name_group = Adw.PreferencesGroup(title="Platsinfo")
-        name_entry = Adw.EntryRow(title="Namn")
+        name_group = Adw.PreferencesGroup(title=_("Platsinfo")
+        name_entry = Adw.EntryRow(title=_("Namn")
         name_group.add(name_entry)
-        desc_entry = Adw.EntryRow(title="Beskrivning")
+        desc_entry = Adw.EntryRow(title=_("Beskrivning")
         name_group.add(desc_entry)
-        comment_entry = Adw.EntryRow(title="Kommentar / tips")
+        comment_entry = Adw.EntryRow(title=_("Kommentar / tips")
         name_group.add(comment_entry)
         box.append(name_group)
 
         # Sensoriska betyg
-        sensor_group = Adw.PreferencesGroup(title="Sensorisk betygsättning (1-10)")
+        sensor_group = Adw.PreferencesGroup(title=_("Sensorisk betygsättning (1-10)")
         scales = {}
         for key, label in [("ljud", "Ljud"), ("ljus", "Ljus"), ("traengsel", "Trängsel")]:
             scale_row = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
@@ -302,7 +303,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         header = Adw.HeaderBar()
         toolbar_view.add_top_bar(header)
 
-        reset_btn = Gtk.Button(label="Återställ")
+        reset_btn = Gtk.Button(label=_("Återställ")
         header.pack_end(reset_btn)
 
         box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
@@ -312,7 +313,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.set_margin_bottom(16)
         toolbar_view.set_content(box)
 
-        info = Gtk.Label(label="Visa bara platser med max denna nivå:")
+        info = Gtk.Label(label=_("Visa bara platser med max denna nivå:")
         info.set_wrap(True)
         info.set_xalign(0)
         box.append(info)

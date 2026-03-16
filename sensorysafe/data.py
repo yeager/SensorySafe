@@ -3,6 +3,7 @@
 import json
 import os
 from pathlib import Path
+from sensorysafe.i18n import _
 
 
 def get_data_path():

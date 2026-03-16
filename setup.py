@@ -11,6 +11,9 @@ setup(
     install_requires=[
         "PyGObject>=3.42",
     ],
+        package_data={
+        "": ["locale/*/LC_MESSAGES/*.mo"],
+    },
     entry_points={
         "console_scripts": [
             "sensorysafe=sensorysafe.main:main",
