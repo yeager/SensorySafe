@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=SensorySafe
+Name[sv]=SinnesSäker
+Comment=Sound level monitoring
+Comment[sv]=Ljudnivåövervakning
+GenericName=Accessibility Application
+GenericName[sv]=Tillgänglighetsapp
+Exec=python3 -m sensorysafe
+Icon=sensorysafe
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+Keywords=accessibility;a11y;
+Keywords[sv]=tillgänglighet;funktionsnedsättning;
