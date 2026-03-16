@@ -37,7 +37,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         header.pack_end(filter_btn)
 
         # Inforad
-        info = Gtk.Label(label=_("Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande).")
+        info = Gtk.Label(label=_("Press + to add a location. Rating 1-10 (10 = most stressful).")
         info.set_wrap(True)
         info.set_margin_start(12)
         info.set_margin_end(12)
@@ -246,7 +246,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.append(name_group)
 
         # Sensoriska betyg
-        sensor_group = Adw.PreferencesGroup(title=_("Sensorisk betygsättning (1-10)")
+        sensor_group = Adw.PreferencesGroup(title=_("Sensory rating (1-10)")
         scales = {}
         for key, label in [("ljud", "Ljud"), ("ljus", "Ljus"), ("traengsel", "Trängsel")]:
             scale_row = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
@@ -313,7 +313,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.set_margin_bottom(16)
         toolbar_view.set_content(box)
 
-        info = Gtk.Label(label=_("Show bara platser med max denna nivå:")
+        info = Gtk.Label(label=_("Show only sites with a maximum of this level:")
         info.set_wrap(True)
         info.set_xalign(0)
         box.append(info)

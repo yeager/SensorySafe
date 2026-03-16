@@ -1,14 +1,23 @@
-# Swedish translation
-# Copyright (C) 2024
-# This file is distributed under the same license as the package.
-#
 msgid ""
 msgstr ""
+"Project-Id-Version: sensorysafe 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-03-16 12:00+0100\n"
+"Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
+"Language-Team: Swedish\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Press + to add a location. Rating 1-10 (10 = most stressful)."
+msgstr "Tryck + för att lägga till en plats. Betyg 1-10 (10 = mest belastande)."
+
+msgid "Sensory rating (1-10)"
+msgstr "Sensorisk betygsättning (1-10)"
+
+msgid "Show only sites with a maximum of this level:"
+msgstr "Show bara platser med max denna nivå:"
 
 msgid "Beskrivning"
 msgstr "Description"
