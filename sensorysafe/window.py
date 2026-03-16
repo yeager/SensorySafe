@@ -211,7 +211,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
     def _on_add_clicked(self, _btn):
         """Öppnar dialog för att lägga till en ny plats."""
         dialog = Adw.Dialog()
-        dialog.set_title("Lägg till plats")
+        dialog.set_title(_("Add location"))
         dialog.set_content_width(400)
         dialog.set_content_height(550)
 
