@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sensorysafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 19:02+0100\n"
+"POT-Creation-Date: 2026-03-16 19:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid "Varningar"
 msgstr ""
 
 #: sensorysafe/window.py:191
-msgid "Kommentar"
+msgid "Comment"
 msgstr ""
 
 #: sensorysafe/window.py:214
@@ -66,7 +66,7 @@ msgid "Description"
 msgstr ""
 
 #: sensorysafe/window.py:244
-msgid "Kommentar / tips"
+msgid "Comment / tips"
 msgstr ""
 
 #: sensorysafe/window.py:249

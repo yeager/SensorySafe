@@ -188,7 +188,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
 
         # Kommentar
         if place.get("kommentar"):
-            comment_group = Adw.PreferencesGroup(title=_("Kommentar")
+            comment_group = Adw.PreferencesGroup(title=_("Comment")
             comment_label = Gtk.Label(label=place["kommentar"])
             comment_label.set_wrap(True)
             comment_label.set_xalign(0)
@@ -241,7 +241,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         name_group.add(name_entry)
         desc_entry = Adw.EntryRow(title=_("Description")
         name_group.add(desc_entry)
-        comment_entry = Adw.EntryRow(title=_("Kommentar / tips")
+        comment_entry = Adw.EntryRow(title=_("Comment / tips")
         name_group.add(comment_entry)
         box.append(name_group)
 
