@@ -27,12 +27,12 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         box.append(header)
 
         add_btn = Gtk.Button(icon_name="list-add-symbolic")
-        add_btn.set_tooltip_text(_("Add plats")
+        add_btn.set_tooltip_text(_("Add place")
         add_btn.connect("clicked", self._on_add_clicked)
         header.pack_start(add_btn)
 
         filter_btn = Gtk.Button(icon_name="funnel-symbolic")
-        filter_btn.set_tooltip_text(_("Filtrera platser")
+        filter_btn.set_tooltip_text(_("Filter locations")
         filter_btn.connect("clicked", self._on_filter_clicked)
         header.pack_end(filter_btn)
 
@@ -135,7 +135,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         # Ta bort-knapp
         del_btn = Gtk.Button(icon_name="user-trash-symbolic")
         del_btn.add_css_class("destructive-action")
-        del_btn.set_tooltip_text(_("Delete plats")
+        del_btn.set_tooltip_text(_("Delete location")
         del_btn.connect("clicked", self._on_delete_place, index, dialog)
         header.pack_end(del_btn)
 
@@ -180,7 +180,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
             warnings.append("Mycket trångt - besök vid lugnare tider")
 
         if warnings:
-            warn_group = Adw.PreferencesGroup(title=_("Varningar")
+            warn_group = Adw.PreferencesGroup(title=_("Warnings")
             for w in warnings:
                 warn_row = Adw.ActionRow(title=w, icon_name="dialog-warning-symbolic")
                 warn_group.add(warn_row)
@@ -236,7 +236,7 @@ class SensorySafeWindow(Adw.ApplicationWindow):
         scroll.set_child(box)
 
         # Namn
-        name_group = Adw.PreferencesGroup(title=_("Platsinfo")
+        name_group = Adw.PreferencesGroup(title=_("Location info")
         name_entry = Adw.EntryRow(title=_("Name")
         name_group.add(name_entry)
         desc_entry = Adw.EntryRow(title=_("Description")

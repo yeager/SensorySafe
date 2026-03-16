@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sensorysafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 19:26+0100\n"
+"POT-Creation-Date: 2026-03-16 20:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: sensorysafe/window.py:30
-msgid "Add plats"
+msgid "Add place"
 msgstr ""
 
 #: sensorysafe/window.py:35
-msgid "Filtrera platser"
+msgid "Filter locations"
 msgstr ""
 
 #: sensorysafe/window.py:40
@@ -34,11 +34,11 @@ msgid " | "
 msgstr ""
 
 #: sensorysafe/window.py:138
-msgid "Delete plats"
+msgid "Delete location"
 msgstr ""
 
 #: sensorysafe/window.py:183
-msgid "Varningar"
+msgid "Warnings"
 msgstr ""
 
 #: sensorysafe/window.py:191
@@ -54,7 +54,7 @@ msgid "Save"
 msgstr ""
 
 #: sensorysafe/window.py:239
-msgid "Platsinfo"
+msgid "Location info"
 msgstr ""
 
 #: sensorysafe/window.py:240
